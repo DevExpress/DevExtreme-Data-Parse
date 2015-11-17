@@ -2,7 +2,8 @@
 
 # DevExtreme.data.Parse
 
-The [DevExtreme data layer](http://js.devexpress.com/Documentation/Guide/#Data_Layer) extension contains classes used to access data via the [Parse JavaScript SDK](https://parse.com/docs/js/guide) enables your DevExtreme application to work with a [Parse](https://parse.com/) back-end service accessed via the JavaScript SDK.
+The [DevExtreme data layer](http://js.devexpress.com/Documentation/Guide/#Data_Layer) extension contains classes used to access data via the [Parse JavaScript SDK](https://parse.com/docs/js/guide) enables your DevExtreme application to work with a [Parse](https://parse.com/) back-end service accessed via the JavaScript SDK.  
+
 The extension includes the `ParseStore` class that wraps the Parse JavaScript SDK functionality with the [Store interface](http://js.devexpress.com/Documentation/Guide/Data_Layer/Data_Layer/#Data_Layer_Data_Layer_Creating_DataSource_What_Are_Stores) accepted within the DevExtreme data layer.
 
 ## Setup
@@ -102,8 +103,8 @@ parseStore.update("keyValue", {
 ```
 
 ## Samples
-There are two samples in [samples dir](https://github.com/DevExpress/DevExtreme-Data-Parse/tree/v15.2/samples).
-One is a basic ToDo application demonstrating a Parse.com back-end and a DevExtreme application working together, and the other demonstrates how to bind data obtained from a Parse.com back-end to a dxDataGrid instance.
-   
-To make them work, clone the repo and run the `npm install` command on it.
-Then replace the stub values of `applicationId` and `javaScriptKey` (in `index.js` fora grid sample and in the `app/data.js` for the ToDo one) with actual ones.
+There are two samples in [samples dir](https://github.com/DevExpress/DevExtreme-Data-Parse/tree/v15.2/samples).  
+One is a basic ToDo application demonstrating  a Parse back-end and a DevExtreme application working together, and the other demonstrates how to bind data obtained from a Parse back-end to a `dxDataGrid` instance.  
+
+To make them work, clone the repo and run the `npm install` command on it.  
+Then replace the stub values of `applicationId` and `javaScriptKey` (in [index.js](https://github.com/DevExpress/DevExtreme-Data-Parse/blob/v15.2/samples/grid/index.js) for a grid sample and in the [app/data.js](https://github.com/DevExpress/DevExtreme-Data-Parse/blob/v15.2/samples/todo/app/data.js) for the ToDo one) with actual ones.
