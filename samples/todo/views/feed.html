@@ -1,0 +1,25 @@
+<div data-options="dxView : { name: 'feed', title: 'Feed'} ">
+    <div data-bind="dxCommand: { id: 'create', onExecute: '#edit', icon: 'add' }"></div>
+    <div data-bind="dxCommand: { id: 'back', onExecute: handleLogOutClick, icon: 'close' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div style="text-indent: 30px;">
+            <h1>Your todos, <span data-bind="text: Parse.User.current().get('username')"></span></h1>
+        </div>
+        <div class="wrapper">
+            <div data-bind="dxTextBox: {
+                                placeholder: 'Search',
+                                mode: 'search',
+                                value: searchQuery,
+                                valueChangeEvent: 'keyup' }">
+            </div>
+            <div data-bind="dxList: { dataSource: dataSource, searchQuery: searchQuery, grouped: true, allowItemDeleting: true, collapsibleGroups: true, pullRefreshEnabled: true }">
+                <div data-options="dxTemplate: { name: 'item'}" data-bind="dxAction: '#edit/{id}'">
+                    <p data-bind="text: Title"></p>
+                </div>
+                <div data-options="dxTemplate: { name: 'group'}">
+                    <b data-bind="text: key ? 'Have done' : 'To do'"></b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

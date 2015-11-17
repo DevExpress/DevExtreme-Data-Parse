@@ -1,0 +1,10 @@
+1. Restrict all public CLP
+
+2. Allow 'Create' CLP for _User table
+
+3. Grant Get, Find, Create, Update, Delete class-level-permissions for newly created user on Working table (Products, for example)
+    3.1. Manually
+    3.2. Manually by assign the corresponding role
+    3.3. Automatically by using Cloud Code
+
+4.

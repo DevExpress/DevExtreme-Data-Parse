@@ -1,0 +1,6 @@
+.vscode
+lib
+node_modules
+bower_components
+shippable
+typings

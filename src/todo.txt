@@ -1,0 +1,48 @@
+Inserting + Updating
+    Complex objects, aka Pointers, Arrays, Relations?
+
+    // beforeLoad
+
+    QUnit.test("with user defined Query", function (assert) {
+        var done = assert.async();
+
+        this.server.respondWith(function (request) {
+            var normalizedBody = normalizeParseRequestBody(request.requestBody);
+
+            assert.deepEqual(normalizedBody, {
+                limit: 2,
+                skip: 3,
+                order: "foo",
+                where: {
+                    $or: [
+                        { foo: 1 },
+                        { foo: { $gt: 1, $lt: 4 } }
+                    ],
+                    bar: { $exists: true },
+                    foo: { $in: [-1, -2, -3], $nin: [1, 2, 3] },
+                    foobar: { $exists: false }
+                }
+            });
+
+            request.respond(
+                HTTP_STATUSES.OK,
+                HTTP_RESPONSE_HEADERS,
+                JSON.stringify({
+                    results: []
+                }));
+        });
+
+        var query = new Parse.Query(CLASS_NAME_STUB)
+            .notContainedIn("foo", [1, 2, 3])
+            .containedIn("foo", [-1, -2, -3])
+            .doesNotExist("foobar")
+            .exists("bar")
+            .addAscending("foo")
+            .limit(2)
+            .skip(3);
+
+        createParseQuery({ query: query })
+            .filter([["foo", 1], "or", [["foo", ">", 1], "and", ["foo", "<", 4]]])
+            .enumerate()
+            .always(done);
+     });

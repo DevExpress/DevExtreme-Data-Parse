@@ -1,0 +1,41 @@
+<div data-options="dxView : { name: 'edit', title: 'New ToDo item', modal: true, disableCache: true } ">
+    <div data-bind="dxCommand: { id: 'back', icon: 'back', onExecute: handleBack, hint: 'Cancel all changes and go back' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' }">
+        <div  style="text-indent: 30px;">
+            <h1>New ToDo item</h1>
+        </div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">Have done</div>
+                <div class="dx-field-value">
+                    <div data-bind="dxCheckBox: { value: done }"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Title</div>
+                <div class="dx-field-value" data-bind="
+                            dxTextBox: { value: title },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'required', message: 'Title can not be empty' }]
+                            }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Description</div>
+                <div class="dx-field-value" data-bind="
+                            dxTextBox: { value: description },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'required', message: 'Description can not be empty' }]
+                            }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label"></div>
+                <div class="dx-field-value">
+                    <div style="margin-left: 5px" data-bind="dxButton: { text: 'Cancel', onClick: handleBack }"></div>
+                    <div data-bind="dxButton: { text: 'Save', onClick: handleSave }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
