@@ -9,7 +9,7 @@ It allows the DevExtreme UI widgets to work with data obtained from the [Parse](
 Also, it makes possible to quickly switch the data provider, e.g. from Parse to Array, or vice versa.
 
 ## Setup
-Include two files from the [src](https://github.com/DevExpress/DevExtreme-Data-Parse/tree/v15.2/src) folder to the `index.html` file in the following order.
+Include `dx.data.parse.js` file from the [src](https://github.com/DevExpress/DevExtreme-Data-Parse/tree/v15.2/src) folder to the `index.html` file in the following order.
 ```html
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="globalize.js"></script>
