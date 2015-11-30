@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parse data with dxDataGrid</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Uncomment the line below to disable phone format detection  -->
+    <!--<meta name="format-detection" content="telephone=no">-->
+
+    <link rel="stylesheet" type="text/css" href="lib/devextreme/styles/dx.spa.css" />
+    <link rel="stylesheet" type="text/css" href="lib/devextreme/styles/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="lib/devextreme/styles/dx.light.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!-- Framework -->
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/globalize.js"></script>
+    <script type="text/javascript" src="lib/parse-sdk.js"></script>
+    <script type="text/javascript" src="lib/devextreme/dx.all.debug.js"></script>
+
+    <script type="text/javascript" src="lib/devextreme/dx.data.parse.js"></script>
+
+    <script type="text/javascript" src="db.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="header">
+            <div class="header-content">
+                <h1>dxDataGrid&nbsp;<span>Parse</span></h1>
+            </div>
+        </div>
+        <div class="inside">
+            <div class="inside-content">
+                <div class="text-wrapper">
+                    <p>This sample demonstrates how to bind data obtained from Parse.com back-end to a dxDataGrid instance.</p>
+                    <p>To make it work, replace stub values of applicationId and javaScriptKey in the index.js file with actual ones.</p>
+                </div>
+                <div class="grid-wrapper">
+                    <div id="gridContainer">
+                        <p style="text-align:center">Initializing. This may take a while to complete.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-copy-content">
+                    <a href="http://devexpress.com" target="_blank" title="DevExpress" class="footer-logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI Light', 'Helvetica Neue Light', 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana;
+    background-color: #efefef;
+    color: #565656;
+    font-size: 100%;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #565656;
+}
+
+.footer {
+    height: 100px;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    border-top: 2px solid #565656;
+}
+
+.header-content {
+    padding: 10px;
+}
+
+.grid-wrapper {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+}
+
+.text-wrapper, .grid-wrapper {
+    margin: 20px;
+}
+
+.inside-content, .header-content, .footer-content {
+    width: 1540px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-logo {
+    text-decoration: none;
+    background: url("images/copy.png") no-repeat;
+
+    width: 156px;
+    height: 27px;
+    display: block;
+
+    top: 37px;
+    right: 0;
+    position: absolute;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 30px;
+    text-transform: none;
+}
+
+p {
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1 > span {
+    color: #f05b41;
+}

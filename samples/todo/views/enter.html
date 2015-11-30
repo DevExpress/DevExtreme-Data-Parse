@@ -1,0 +1,84 @@
+<div data-options="dxView : { name: 'enter', title: 'Live long and prosper', modal: true, safe: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <h1 style="text-align: center; padding: 5px;">Hello, %username%</h1>
+        <p style="text-align: center;">Please, <a href="javascript:void 0" data-bind="click: showSignInForm">sign in</a> or <a href="javascript:void 0" data-bind="click: showSignUpForm">sign up</a></p>
+        <div data-bind="dxMultiView: { swipeEnabled: false, selectedIndex: selectedIndex, items: views, height: '100%' }">
+
+            <div data-options="dxTemplate: { name: 'signIn' }">
+                <!-- ko with: $root.signIn -->
+                <div class="dx-fieldset">
+                    <div class="dx-field">
+                        <div class="dx-field-label">Username</div>
+                        <div class="dx-field-value" data-bind="
+                            dxTextBox: { value: username },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'required', message: 'UserName is required' }]
+                            }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Password</div>
+                        <div class="dx-field-value" data-bind="
+                            dxTextBox: {
+                                mode: 'password',
+                                value: password },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'required', message: 'Password can not be empty' }]
+                            }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label"></div>
+                        <div class="dx-field-value" data-bind="dxButton: { text: 'Sign in', onClick: handleSignInClick }"></div>
+                    </div>
+                </div>
+                <!-- /ko -->
+            </div>
+
+            <div data-options="dxTemplate: { name: 'signUp' }">
+                <!-- ko with: $root.signUp -->
+                <div class="dx-fieldset">
+                    <div class="dx-field">
+                        <div class="dx-field-label">Email</div>
+                        <div class="dx-field-value" data-bind="
+                            dxTextBox: {
+                                mode: 'email',
+                                value: email },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'email' },
+                                    { type: 'required', message: 'Email is required' }]
+                            }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Username</div>
+                        <div class="dx-field-value" data-bind="
+                            dxTextBox: { value: username },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'required', message: 'UserName is required' }]
+                            }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label">Password</div>
+                        <div class="dx-field-value" data-bind="
+                            dxTextBox: {
+                                mode: 'password',
+                                value: password },
+                            dxValidator: {
+                                validationRules: [
+                                    { type: 'required', message: 'Password can not be empty' }]
+                            }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label"></div>
+                        <div class="dx-field-value" data-bind="dxButton: { text: 'Sign up', onClick: handleSignUpClick }"></div>
+                    </div>
+                </div>
+                <!-- /ko -->
+            </div>
+
+        </div>
+
+    </div>
+</div>

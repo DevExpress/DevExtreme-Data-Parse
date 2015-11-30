@@ -1,0 +1,11 @@
+.vs
+.vscode
+lib
+bin
+obj
+node_modules
+bower_components
+shippable
+typings
+.gitattributes
+*.txt

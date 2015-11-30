@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>61e35678-819d-4a3b-a6f7-005ef145d0c8</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>False</RunInSimulator>
+    <UploadPluginsToTheCourier>True</UploadPluginsToTheCourier>
+    <ApplicationPage>index.html</ApplicationPage>
+    <RootNamespace>Grid</RootNamespace>
+    <Name>Grid</Name>
+    <DebugSitePortNumber>50000</DebugSitePortNumber>
+    <UseWebDev>False</UseWebDev>
+    <DefaultDevice>iPhone6</DefaultDevice>
+    <DeviceOrientation>Portrait</DeviceOrientation>
+    <DisplayUnhandledExceptions>True</DisplayUnhandledExceptions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="db.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\copy.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.js" />
+    <Content Include="index.html" />
+    <Content Include="index.css" />
+    <Content Include="lib\devextreme\dx.all.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\dx.data.parse.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Desktop\DesktopLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Desktop\DesktopLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Desktop\DesktopLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Empty\EmptyLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Empty\EmptyLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Empty\EmptyLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Navbar\NavbarLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Navbar\NavbarLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Navbar\NavbarLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Pivot\PivotLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Pivot\PivotLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Pivot\PivotLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Popup\PopupLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Popup\PopupLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Popup\PopupLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Simple\SimpleLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Simple\SimpleLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Simple\SimpleLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\SlideOut\SlideOutLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\SlideOut\SlideOutLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\SlideOut\SlideOutLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Split\SplitLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Split\SplitLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\layouts\Split\SplitLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.android5.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.common.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.contrast.compact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.contrast.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dark.compact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dark.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.common.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.contrast.compact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.contrast.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.dark.compact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.dark.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.light.compact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.dashboard.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.exporter.contrast.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.exporter.dark.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.exporter.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.ios7.default.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.light.compact.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.spa.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.win10.black.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.win10.white.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.win8.black.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\dx.win8.white.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\icons\dxicons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\icons\dxicons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\icons\dxicons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\icons\dxiconsios.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\icons\dxiconsios.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\devextreme\styles\icons\dxiconsios.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\globalize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\knockout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\parse-sdk.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\devextreme\" />
+    <Folder Include="lib\devextreme\layouts\" />
+    <Folder Include="lib\devextreme\layouts\Desktop\" />
+    <Folder Include="lib\devextreme\layouts\Empty\" />
+    <Folder Include="lib\devextreme\layouts\Navbar\" />
+    <Folder Include="lib\devextreme\layouts\Pivot\" />
+    <Folder Include="lib\devextreme\layouts\Popup\" />
+    <Folder Include="lib\devextreme\layouts\Simple\" />
+    <Folder Include="lib\devextreme\layouts\SlideOut\" />
+    <Folder Include="lib\devextreme\layouts\Split\" />
+    <Folder Include="lib\devextreme\styles\" />
+    <Folder Include="lib\devextreme\styles\icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="Build">
+    <!--
+    <Message Text="'$(MSBuildToolsPath)'"></Message>
+    -->
+    <Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high">
+    </Message>
+    <Message Text="Copying references to output dir." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+    <Message Text="Copying files to output dir." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high">
+    </Message>
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

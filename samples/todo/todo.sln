@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{1B19158F-E398-40A6-8E3B-350508E125F1}") = "todo", "todo.dxjsproj", "{C1C76371-3FAF-401A-8259-003B3DFA36DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1C76371-3FAF-401A-8259-003B3DFA36DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C76371-3FAF-401A-8259-003B3DFA36DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C76371-3FAF-401A-8259-003B3DFA36DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C76371-3FAF-401A-8259-003B3DFA36DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
