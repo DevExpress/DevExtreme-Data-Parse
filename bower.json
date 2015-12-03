@@ -1,17 +1,21 @@
 {
     "name": "devextreme-data-parse",
-    "private": true,
-    "version": "15.2.2",
+    "version": "15.2.3",
     "authors": [
         { "name": "Developer Express Inc.", "email": "support@devexpress.com", "homepage": "https://www.devexpress.com" }
     ],
     "license": "MIT",
     "description": "DevExtreme data layer extension for Parse back-end service",
+    "homepage": "https://js.devexpress.com",
+    "keywords": [
+        "devextreme",
+        "parse"
+    ],
     "dependencies": {
         "jquery": "~2.1.4",
         "knockout": "^3.0.0",
         "globalize": "~0.1.1",
-        "devextreme": "git@github.com:DevExpress/dx-devextreme#15_2"
+        "devextreme": "~15.2.3"
     },
     "devDependencies": {
         "sinon": "http://sinonjs.org/releases/sinon-1.16.1.js",

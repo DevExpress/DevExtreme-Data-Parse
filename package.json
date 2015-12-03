@@ -1,7 +1,6 @@
 {
     "name": "devextreme-data-parse",
-    "private": true,
-    "version": "15.2.0",
+    "version": "15.2.3",
     "devDependencies": {
         "bower": "^1.4.1",
         "bower-installer": "^1.2.0",

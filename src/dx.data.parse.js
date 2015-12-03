@@ -1,3 +1,4 @@
+"use strict";
 (function ($, DX, undefined) {
     var dataNs = DX.data,
 
