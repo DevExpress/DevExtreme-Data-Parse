@@ -4,11 +4,13 @@ var gulp = require("gulp"),
     bower = require("gulp-bower"),
     rename = require("gulp-rename"),
     concat = require("gulp-concat"),
-    minify = require('gulp-minify');
+    minify = require('gulp-minify'),
+    ts = require("gulp-typescript");
 
 var __bowerDir = "./bower_components";
 
 var __srcDir = "./src";
+var __typingsDir = "./typings";
 
 var __libDir = "./lib";
 var __todoLibDir = "./samples/todo/lib";
@@ -151,9 +153,16 @@ gulp.task("install", [
     "install:devextreme:parse"
 ]);
 
-gulp.task("run-ci", ["install"], function () {
+gulp.task("typescript", ["install"], function () {
+    return gulp.src([
+        __typingsDir + "/**/*.d.ts",
+        __srcDir + "/dx.data.parse.d.ts"
+    ]).pipe(ts({ noImplicitAny: true }));
+});
+
+gulp.task("run-ci", ["install", "typescript"], function (done) {
     new karma.Server({
-        signleRun: true,
+        singleRun: true,
         configFile: __dirname + "/karma.conf.js"
-    });
+    }, done).start();
 });

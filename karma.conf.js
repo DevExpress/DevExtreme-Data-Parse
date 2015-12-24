@@ -4,50 +4,25 @@ module.exports = function (config) {
         return x === "--debug";
     });
 
-    var files,
-        preprocessors;
-
-    if (isDebug) {
-        files = [
-            "lib/sinon.js",
-            "lib/jquery.js",
-            "lib/globalize.js",
-            "lib/parse-sdk.js",
-            "lib/devextreme/dx.all.debug.js",
-
-            "src/dx.data.parse.js",
-
-            "tests/dx.data.query.parse.tests.js",
-            "tests/dx.data.store.parse.tests.js"
-        ];
-
-        preprocessors = [];
-    }
-    else {
-        files = [
-            "lib/sinon.js",
-            "lib/jquery.js",
-            "lib/globalize.js",
-            "lib/parse-sdk.js",
-            "lib/devextreme/dx.all.debug.js",
-
-            "src/dx.data.parse.js",
-
-            "tests/dx.data.query.parse.tests.js",
-            "tests/dx.data.store.parse.tests.js"
-        ];
-
-        preprocessors = ["coverage"];
-    }
-
-    config.set({
+    var options = {
         basePath: "",
 
         frameworks: [
             "qunit"
         ],
 
-        files: files,
+        files: [
+            "lib/sinon.js",
+            "lib/jquery.js",
+            "lib/globalize.js",
+            "lib/parse-sdk.js",
+            "lib/devextreme/dx.all.debug.js",
+
+            "src/dx.data.parse.js",
+
+            "tests/dx.data.query.parse.tests.js",
+            "tests/dx.data.store.parse.tests.js"
+        ],
 
         plugins: [
             "karma-qunit",
@@ -55,8 +30,6 @@ module.exports = function (config) {
             "karma-junit-reporter",
             "karma-phantomjs-launcher"
         ],
-
-        preprocessors: preprocessors,
 
         reporters: [
             "coverage",
@@ -81,5 +54,11 @@ module.exports = function (config) {
         autoWatch: true,
         browsers: ["PhantomJS"],
         singleRun: true
-    });
+    };
+
+    if (!isDebug) {
+        options.preprocessors = ["coverage"];
+    }
+
+    config.set(options);
 };

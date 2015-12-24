@@ -1,5 +1,6 @@
-"use strict";
 (function ($, DX, undefined) {
+    "use strict";
+
     var dataNs = DX.data,
 
         utilsNs = DX.require("/utils/utils.common"),
@@ -453,16 +454,9 @@
         }
     });
 
-    $.extend(true, dataNs, {
-        queryAdapters: {
-            parse: createParseQueryAdapter
-        },
-
-        utils: {
-            parse: {
-                normalizeParseErrorResponse: normalizeParseErrorResponse,
-                normalizeParseSuccessResponse: normalizeParseSuccessResponse
-            }
-        }
-    });
+    dataNs.queryAdapters.parse = createParseQueryAdapter;
+    dataNs.utils.parse = {
+        normalizeParseErrorResponse: normalizeParseErrorResponse,
+        normalizeParseSuccessResponse: normalizeParseSuccessResponse
+    };
 })(jQuery, DevExpress);

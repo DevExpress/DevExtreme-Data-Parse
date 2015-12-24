@@ -1,6 +1,6 @@
 {
     "name": "devextreme-data-parse",
-    "version": "15.2.3",
+    "version": "15.2.4",
     "authors": [
         { "name": "Developer Express Inc.", "email": "support@devexpress.com", "homepage": "https://www.devexpress.com" }
     ],
@@ -13,16 +13,16 @@
     ],
     "dependencies": {
         "jquery": "~2.1.4",
-        "knockout": "^3.0.0",
         "globalize": "~0.1.1",
-        "devextreme": "~15.2.3"
+        "devextreme": "~15.2.4"
     },
     "devDependencies": {
         "sinon": "http://sinonjs.org/releases/sinon-1.16.1.js",
         "parse": "https://www.parse.com/downloads/javascript/parse-1.6.4.js"
     },
     "main": [
-        "src/dx.data.parse.js"
+        "src/dx.data.parse.js",
+        "src/dx.data.parse.d.ts"
     ],
     "ignore": [
         "tests",

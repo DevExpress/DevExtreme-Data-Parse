@@ -9,3 +9,4 @@ shippable
 typings
 .gitattributes
 *.txt
+*.suo

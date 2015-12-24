@@ -9,6 +9,7 @@
     <ApplicationPage>index.html</ApplicationPage>
     <RootNamespace>todo</RootNamespace>
     <Name>todo</Name>
+    <UpgradeNotifyShown>15.2.4</UpgradeNotifyShown>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -124,36 +125,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="lib\devextreme\styles\dx.dark.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.common.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.contrast.compact.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.contrast.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.dark.compact.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.dark.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.light.compact.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.dashboard.light.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.exporter.contrast.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.exporter.dark.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="lib\devextreme\styles\dx.exporter.light.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="lib\devextreme\styles\dx.ios7.default.css">
