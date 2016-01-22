@@ -100,7 +100,7 @@ You can read and modify data associated with the current `ParseStore` instance i
 
 To set `ACL` of the inserted/modified object, pass the [Parse.ACL](https://parse.com/docs/js/api/classes/Parse.ACL.html) instance to the `ACL` property of the values object.
 ```javascript
-var acl = new Parse.ALC();
+var acl = new Parse.ACL();
 acl.setPublicReadAccess(false);
 acl.setPublicWriteAccess(false);
 acl.setReadAccess(Parse.User.current(), true);
