@@ -14,7 +14,8 @@
     "dependencies": {
         "jquery": "~2.1.4",
         "globalize": "~0.1.1",
-        "devextreme": "~15.2.4"
+        "devextreme": "~15.2.4",
+        "knockout": "^3.3.0"
     },
     "devDependencies": {
         "sinon": "http://sinonjs.org/releases/sinon-1.16.1.js",
