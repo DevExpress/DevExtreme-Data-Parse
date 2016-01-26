@@ -61,13 +61,25 @@ this.initDataBase()
                     width: 125
                 }
             ],
-            onRowUpdating: function (e) {
-                var id = e.newData.State.id;
+
+            onRowUpdating: function(e) {
+                var id;
+
+                if(!("State" in e.newData))
+                    return;
+
+                id = e.newData.State.id;
                 e.newData.State = new Parse.Object("State");
                 e.newData.State.id = id;
             },
-            onRowInserting: function (e) {
-                var id = e.data.State.id;
+
+            onRowInserting: function(e) {
+                var id;
+
+                if(!("State" in e.newData))
+                    return;
+
+                id = e.data.State.id;
                 e.data.State = new Parse.Object("State");
                 e.data.State.id = id;
             }
