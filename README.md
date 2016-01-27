@@ -127,3 +127,5 @@ One is a basic ToDo application demonstrating a Parse.com back-end and a DevExt
 
 To make them work, clone the repo and run the `npm install` command on it.
 Then replace the stub values of `applicationId` and `javaScriptKey` (in [db.js](https://github.com/DevExpress/DevExtreme-Data-Parse/tree/v15.2/samples/grid/db.js) for a grid sample and in the [app/data.js](https://github.com/DevExpress/DevExtreme-Data-Parse/tree/v15.2/samples/todo/app/data.js) for the ToDo one) with actual ones.
+
+Or, you can try those samples online by following [this link](http://devexpress.github.io/DevExtreme-Data-Parse/todo/) to see the ToDo sample and [this one](http://devexpress.github.io/DevExtreme-Data-Parse/grid/) for Grid sample.
