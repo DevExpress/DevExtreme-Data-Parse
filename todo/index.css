@@ -77,7 +77,7 @@ a {
     opacity: 0.5;
     display: inline-block;
     background-repeat: no-repeat;
-    background-image: url(../lib/Images/dx_logo.png);
+    background-image: url(../lib/images/dx_logo.png);
 }
 
 .qr-container {
@@ -103,88 +103,6 @@ a {
         text-align: right;
         left: -10px;
     }
-
-
-
-#oldDeviceSwitcher {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    text-align: left;
-}
-
-#deviceSwitcher {
-    position: absolute;
-    top: 190px;
-    right: 20px;
-    text-align: left;
-    z-index: 5;
-}
-
-.device-button {
-    width: 90px;
-    height: 90px;
-    cursor: pointer;
-    background-position: center;
-    background-repeat: no-repeat;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-image: url(Images/Icons/generic.png);
-}
-
-    .device-button.iOS7 {
-        background-image: url(Images/Icons/ios.png);
-    }
-
-    .device-button.Android {
-        background-image: url(Images/Icons/android.png);
-    }
-
-    .device-button.WindowsPhone {
-        background-image: url(Images/Icons/windows_phone.png);
-    }
-
-    .device-button.Generic {
-        background-image: url(Images/Icons/generic.png);
-    }
-
-    .device-button.active {
-        background-color: #FAFAFA;
-        border-radius: 5px;
-        border: 1px solid rgba(0,0,0,0.15);
-    }
-
-    .device-button.Phone {
-        background-image: url(Images/Icons/generic.png);
-    }
-
-    .device-button.Tablet {
-        background-image: url(Images/Icons/ipad.png);
-    }
-
-
-@media(max-width: 1500px) {
-    .body .site-content.tablet .dx-simulator #deviceFrame {
-        -moz-transform: scale(0.5);
-        -o-transform: scale(0.5);
-        -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        transform: scale(0.5);
-        top: -145px;
-        position: absolute;
-        left: -154px;
-        width: 1024px;
-        height: 768px;
-    }
-
-    .body .site-content.tablet .dx-simulator {
-        background-size: 616px 432px;
-        background-position: 51px 23px;
-        width: 512px;
-        height: 384px;
-    }
-}
 
 .dx-simulator {
     position: relative;
@@ -215,5 +133,5 @@ a {
     width: 320px;
     height: 568px;
 	padding: 116px 62px 116px 32px;
-    background: url(../lib/Images/ios.png) 0 0 no-repeat;
+    background: url(../lib/images/ios.png) 0 0 no-repeat;
 }
