@@ -1,0 +1,31 @@
+<div data-options="dxView : { name: 'hello', title: 'Set up access keys', modal: true, safe: true, disableCache: true } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div style="margin: 10px 5px">
+            <p style="text-align:center">This demo requires<br/> <i>ApplicationID</i> and <i>JavascriptKey</i> <br/>to access your application hosted on the <a target="_blank" href="https://dashboard.parse.com/apps">Parse.com</a> service.</p>
+        </div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">ApplicationID</div>
+                <div class="dx-field-value" data-bind="
+                    dxTextBox: { value: appID, attr: { name: 'tb-application-id' } },
+                    dxValidator: {
+                        validationRules: [
+                            { type: 'required', message: 'ApplicationID is required' }]
+                    }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">JavascriptKey</div>
+                <div class="dx-field-value" data-bind="
+                    dxTextBox: { value: jsKey, attr: { name: 'tb-javascript-key' } },
+                    dxValidator: {
+                        validationRules: [
+                            { type: 'required', message: 'JavascriptKey is required' }]
+                    }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label"></div>
+                <div class="dx-field-value" data-bind="dxButton: { text: 'Connect', onClick: handleConnectClick }"></div>
+            </div>
+        </div>
+    </div>
+</div>

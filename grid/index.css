@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: white;
+    color: #868686;
+    font: 12px sans-serif;
+    min-width: 1050px;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: #f05b41;
+    text-decoration: none;
+    cursor: pointer;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+.body {
+    margin-top: -150px;
+    min-height: 100%;
+}
+
+.site-content {
+    padding-top: 150px;
+    position: relative;
+}
+
+.grid-container-wrapper {
+    padding: 10px;
+}
+
+.footer {
+    height: 150px;
+}
+
+    .footer .left {
+        float: left;
+        margin: 50px 0 0 40px;
+    }
+
+.left .text {
+    border-left: 1px solid rgba(0,0,0,0.25);
+    margin: 0 0 0 30px;
+    padding: 0 0 0 30px;
+}
+
+    .left .text h2 {
+        color: #393939;
+        margin-bottom: 0;
+    }
+
+    .left .text p {
+        margin-top: 0;
+    }
+
+
+.footer div {
+    display: inline-block;
+}
+
+.dx-logo {
+    width: 156px;
+    height: 27px;
+    opacity: 0.5;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../lib/Images/dx_logo.png);
+}
