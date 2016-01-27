@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DevExpress Device Simulator</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <script>
+            $(function() {
+                $("#deviceFrame").dxSimulator({
+                    device: "iPhone5",
+                    orientation: "p",
+                    osVersionNumber: 7
+                });
+            });
+        </script>
+</head>
+    <body>
+        <div class="body">
+            <div class="site-content">
+                <iframe id="deviceFrame" src="src/index.html"></iframe>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="left">
+                <a class="dx-logo" href="http://devexpress.com" target="_blank"></a>
+                <div class="text">
+                    <h2>Your Next Great Web App Starts Here</h2>
+                    <p>Download your free <a target="_blank" href="http://js.devexpress.com/">30 day trial</a> of DevExtreme today</p>
+                </div>
+            </div>
+            <div class="qr-container">
+                <div class="hint">
+                    View on your device
+                </div>
+                <div>
+                    <span>
+                        <img src="https://chart.googleapis.com/chart?chs=140x140&amp;cht=qr&amp;chld=L|0&amp;chl=http%3A%2F%2Fdevexpress.github.io%2Fdevextreme-data-parse%2Ftodo%2Fsrc%2F" />
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
